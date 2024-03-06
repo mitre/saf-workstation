@@ -1,2 +1,4 @@
 output-*
+secret*
+local*
 packer_cache

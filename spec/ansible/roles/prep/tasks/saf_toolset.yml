@@ -1,0 +1,5 @@
+- name: Fetch InSpec profiles
+  ansible.builtin.git:
+    repo: "{{ item }}"
+    dest: "/home/{{ saf_user }}/inspec_profiles"
+  loop: "{{ inspec_profiles }}"

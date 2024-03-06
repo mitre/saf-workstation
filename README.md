@@ -6,6 +6,7 @@ Virtual machine image with the [MITRE SAF](https://saf.mitre.org) toolset preins
 
 - [Packer](https://developer.hashicorp.com/packer) >= v1.10.0
 - [VMWare Workstation Pro](https://www.vmware.com/products/workstation-pro.html) >= v17.5.1
+- [Ansible](https://docs.ansible.com/)
 
 ## Usage
 

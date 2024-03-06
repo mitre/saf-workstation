@@ -1,2 +1,10 @@
 ---
-# define defualt values for variables here
+# define default values for variables here
+saf_user: saf
+inspec_profiles:
+  - https://github.com/mitre/redhat-enterprise-linux-8-stig-baseline
+  - https://github.com/mitre/redhat-enterprise-linux-7-stig-baseline
+  - https://github.com/mitre/microsoft-windows-10-stig-baseline
+  - https://github.com/mitre/microsoft-windows-2012r2-memberserver-stig-baseline
+  - https://github.com/mitre/microsoft-windows-server-2016-stig-baseline
+  - https://github.com/mitre/microsoft-windows-server-2019-stig-baseline

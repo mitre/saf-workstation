@@ -21,12 +21,19 @@ packer {
 }
 
 source "vmware-vmx" "saf-workstation-source" {
-        source_path = "path to vmx file"
-        ssh_username = "root"
-        ssh_password = "change me!"
-        shutdown_command = "shutdown -P now"
-    }
+    source_path = var.vmx_path
+    ssh_username = var.ssh_connection.username
+    ssh_password = var.ssh_connection.password
+    shutdown_command = "shutdown -P now"
+}
 
 build {
+
+    name = "saf-workstation"
+
     sources = ["sources.vmware-vmx.saf-workstation-source"]
+
+    provisioner "ansible" {
+        playbook_file = "spec/ansible/playbook.yml"
+    }
 }
